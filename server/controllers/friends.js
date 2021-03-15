@@ -7,19 +7,22 @@ module.exports = {
     },
     makeFriends: (req, res) => {
         const {character} = req.body
-
+        // console.log(character)
+        character.id = id
         friends.push(character) 
+        // console.log(friends)
         res.status(200).send(friends)
 
-        friends.id = id
+       
         id++
     },
     editCatchPhrase: (req,res) =>  {
         const {id} = req.params
         const {catchPhrase} = req.body
 
-        const character = friends.find(elem => elem.id === +id)
-        character.catchPhrase = catchPhrase
+        const friend = friends.find(elem => elem.id === +id)
+        console.log(friend)
+        friend.catchPhrase = catchPhrase
         res.status(200).send(friends)
     },
     throwOutWindow: (req, res) => {
