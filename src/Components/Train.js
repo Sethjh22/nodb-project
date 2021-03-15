@@ -17,7 +17,7 @@ class Train extends Component{
 
         return(
             <div onClick={this.handleCharacter}>
-                <img src={this.props.characters.image} alt={'Character Image'}/>
+                <img className='image'src={this.props.characters.image} alt={this.props.characters.name}/>
                 <h3>{this.props.characters.name}</h3>
                 <h4>{this.props.characters.catchPhrase}</h4>
                 
@@ -26,3 +26,4 @@ class Train extends Component{
         )
     }
 }
+export default Train

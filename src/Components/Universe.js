@@ -20,16 +20,16 @@ class Universe extends Component {
     }
     
     componentDidMount(){
-        this.getCharacter
+        this.getCharacter()
     }
 
     render(){
-        const{friendFN} = props
+        const{friendFN} = this.props
         const mappedCharacter = this.state.characters.map((e, i)=> (
             <Train key={i} characters={e} friendFN = {friendFN} getCharacter = {this.getCharacter}/>
         ))
         return(
-            <div>
+            <div className='App' >
                 {mappedCharacter}
             </div>
         )

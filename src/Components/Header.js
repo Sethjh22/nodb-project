@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header= () => {
     return(
-        <div>
+        <div className='App'>
             <h1> Welcome to the Story Train</h1>
         </div>
     )

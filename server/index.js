@@ -8,12 +8,14 @@ const app = express()
 
 app.use(express.json())
 
-app.get('/api/character', friends.getFriends)
+app.get('/api/character', characters.getRandomCharacter)
 
-app.post('/api/character', friends.makeFriends)
+app.get('/api/friend', friends.getFriends)
 
-app.put('/api/character/:id', friends.editCatchPhrase)
+app.post('/api/friend', friends.makeFriends)
 
-app.delete('/api/character/:id', friends.throwOutWindow)
+app.put('/api/friend/:id', friends.editCatchPhrase)
+
+app.delete('/api/friend/:id', friends.throwOutWindow)
 
 app.listen(port, () => console.log(`Server is running on ${port}`))

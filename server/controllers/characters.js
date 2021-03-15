@@ -1,5 +1,5 @@
 const axios = require('axios')
-const { response } = require('express')
+
 
 module.exports = {
     getRandomCharacter: (req, res) => {
