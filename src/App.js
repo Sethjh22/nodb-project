@@ -53,8 +53,13 @@ class App extends Component {
           <Header />
           <Universe friendFN={this.makeFriend}/>
         </header>
-        <body>
-          <Friends friends={this.state.friends} catchPhraseFN={this.editCatchPhrase} windowFN={this.throwOutWindow}/>
+        <body className='associates'>
+          <section className='friends'>
+            <Friends friends={this.state.friends} catchPhraseFN={this.editCatchPhrase} windowFN={this.throwOutWindow}/>
+          </section>
+          <section className='enemies'>
+            <h2>Why don't you like Rick?</h2>
+          </section>
 
         </body>
 

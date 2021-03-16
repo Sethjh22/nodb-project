@@ -7,7 +7,7 @@ class Train extends Component{
         let newCharacter = {
             name: characters.name,
             image: characters.image,
-            catchPhrase: 'How do you know rick?'
+            catchPhrase: 'I sure do love Rick!'
         }
         this.props.friendFN(newCharacter)
         this.props.getCharacter()

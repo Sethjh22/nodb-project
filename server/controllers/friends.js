@@ -12,8 +12,8 @@ module.exports = {
         friends.push(character) 
         // console.log(friends)
         res.status(200).send(friends)
-
-       
+        
+        
         id++
     },
     editCatchPhrase: (req,res) =>  {

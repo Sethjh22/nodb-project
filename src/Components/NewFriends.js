@@ -24,8 +24,8 @@ class NewFriends extends Component{
                 <h2 className='name'>{this.props.friend.name}</h2>
                 <h3 className='catchPhrase'>{this.props.friend.catchPhrase}</h3>
                 <input placeholder="New catchphrase here" value={this.state.catchPhraseInput} onChange={e => this.handleInput(e.target.value)}/>
-                <button className="button" onClick={() => this.handleEdit(this.props.friend.id)}>Edit Catchphrase</button>
-                <button className="button" onClick={() => this.props.windowFN(this.props.friend.id)}>Throw out window</button>
+                <button className="button" className='editButton' onClick={() => this.handleEdit(this.props.friend.id)}>Edit Catchphrase</button>
+                <button className="button" className='windowButton' onClick={() => this.props.windowFN(this.props.friend.id)}>Throw out window</button>
             </div>
 
         )

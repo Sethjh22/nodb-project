@@ -1,11 +1,13 @@
 .App {
   text-align: center;
+  
 }
 
 .character-card {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  align-items: center;
 }
 .image{
   height: 100px;
@@ -13,7 +15,25 @@
 .name, .catchPhrase{
   font-size: 15px;
 }
-.button{
+.editButton{
   display: block;
+  margin-left: 25px;
+  /* margin-bottom: 5px; */
   /* align-items: center; */
+  /* background-color: green; */
+}
+.windowButton{
+  margin-bottom: 10px;
+}
+.associates{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.friends{
+  width: 50%;
+}
+.enemies{
+  width: 50%;
+  text-align: center;
 }
