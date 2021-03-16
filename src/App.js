@@ -49,9 +49,14 @@ class App extends Component {
   render(){
     return(
       <div>
-        <Header />
-        <Universe friendFN={this.makeFriend}/>
-        <Friends friends={this.state.friends} catchPhraseFN={this.editCatchPhrase} windowFN={this.throwOutWindow}/>
+        <header>
+          <Header />
+          <Universe friendFN={this.makeFriend}/>
+        </header>
+        <body>
+          <Friends friends={this.state.friends} catchPhraseFN={this.editCatchPhrase} windowFN={this.throwOutWindow}/>
+
+        </body>
 
 
       </div>
