@@ -48,7 +48,7 @@ class App extends Component {
 
   render(){
     return(
-      <div>
+      <div className='border'>
         <header>
           <Header />
           <Universe friendFN={this.makeFriend}/>
@@ -58,7 +58,7 @@ class App extends Component {
             <Friends friends={this.state.friends} catchPhraseFN={this.editCatchPhrase} windowFN={this.throwOutWindow}/>
           </section>
           <section className='enemies'>
-            <h2>Why don't you like Rick?</h2>
+            <h2 className='title'>Why don't you like Rick?</h2>
           </section>
 
         </body>

@@ -8,7 +8,7 @@ const Friends = props => {
 
     return (
         <div className='App'>
-            <h2>Rickity Rick Rick Rick</h2>
+            <h2 className="title">Rickity Rick Rick Rick</h2>
             <section className='character-card'>
                 {mappedCharacter}
             </section>

@@ -1,5 +1,16 @@
+.border{
+  height: 200vh;
+  border: 8px groove rgba(235, 173, 15, 0.87);
+
+  /* border-image-slice:42 42 42 42;
+  border-image-width:42px 42px 42px 42px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:round round;
+  border-image-source:url("https://mdn.mozillademos.org/files/6017/border-image-6.svg"); */
+}
 .App {
   text-align: center;
+  
   
 }
 
@@ -15,6 +26,11 @@
 .name, .catchPhrase{
   font-size: 15px;
 }
+.title{
+  border: 5px groove rgba(235, 173, 15, 0.87);
+  /* font-family: ; */
+}
+
 .editButton{
   display: block;
   margin-left: 25px;
